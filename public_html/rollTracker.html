@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<title>Roll Tracker</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript" src="js/roll_counter.js"></script>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+    
+<body>
+
+<header>
+   CameronCameronCameron.com
+</header>    
+        
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rollTracker.html">Roll Tracker</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="testingGround.html">Testing Ground</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+    </ul>  
+</nav>
+    
+<h1>Roll Tracker</h1>
+
+<section id="buttons">
+    <p>Click the buttons to keep track of the experimental probability of 
+        rolling two dice.</p>
+    <button onclick="updateRoll(this.innerHTML)">2</button>
+    <button onclick="updateRoll(this.innerHTML)">3</button>
+    <button onclick="updateRoll(this.innerHTML)">4</button>
+    <button onclick="updateRoll(this.innerHTML)">5</button>
+    <button onclick="updateRoll(this.innerHTML)">6</button>
+    <button onclick="updateRoll(this.innerHTML)">7</button>
+    <button onclick="updateRoll(this.innerHTML)">8</button>
+    <button onclick="updateRoll(this.innerHTML)">9</button>
+    <button onclick="updateRoll(this.innerHTML)">10</button>
+    <button onclick="updateRoll(this.innerHTML)">11</button>
+    <button onclick="updateRoll(this.innerHTML)">12</button>
+    <button onclick="reloadPage()">Reset</button>
+</section>
+
+<section id="probTable">
+    <table>
+        <tr>
+            <th rowspan="2">Roll<br/> Value</th>
+            <th colspan="2">Experimental</th>
+            <th colspan="2">Theoretical</th>
+        </tr>
+        <tr>
+            <th>#</th>
+            <th>%</th>
+            <th>#</th>
+            <th>%</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">3%</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">6%</td>
+        </tr>
+        <tr>
+            <th>4</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">8%</td>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">11%</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">14%</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">17%</td>
+        </tr>
+        <tr>
+            <th>8</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">14%</td>
+        </tr>
+        <tr>
+            <th>9</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">11%</td>
+        </tr>
+        <tr>
+            <th>10</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">8%</td>
+        </tr>
+        <tr>
+            <th>11</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">6%</td>
+        </tr>
+        <tr>
+            <th>12</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">3%</td>
+        </tr>
+        <tr>
+            <th>Total</th>
+            <td class="expNum">-</td>
+            <td class="percent expPercent">0%</td>
+            <td class="theoNum">-</td>
+            <td class="percent">100%</td>
+        </tr>
+    </table>
+    
+</section>
+
+<section id="expProb">
+    <p id="expRollDisplay"> </p>
+    <p id="numRollDisplay"> </p>
+</section>
+
+
+
+
+
+</body>
+</html>

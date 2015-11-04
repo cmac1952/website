@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    
+<title>Testing Ground</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="js/testingGround.js"></script>   
+
+<body>
+
+<header>
+    Welcome to CameronCameronCameron.com
+</header>
+    
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rollTracker.html">Roll Tracker</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="testingGround.html">Testing Ground</a></li>
+        <li><a href="canvas.html">Canvas</a></li>
+    </ul>  
+</nav>
+    
+    <section id="input">
+        <form id="numDice">
+            <span id="instructions">select number of dice:</span> 
+            <input type="button" onclick="myFunction(this.value)" value="1" />
+            <input type="button" onclick="myFunction(this.value)" value="2" />
+            <input type="button" onclick="myFunction(this.value)" value="3" />
+            <input type="button" onclick="myFunction(this.value)" value="4" />
+            <input type="button" onclick="myFunction(this.value)" value="5" />
+        </form>
+    </section>
+    
+    <section id="output">
+        <p id="outputDisplay"></p>
+    </section>
+</body>
+</html>
